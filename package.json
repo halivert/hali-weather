@@ -1,15 +1,24 @@
 {
-  "name": "hali-weather",
-  "version": "0.1.0",
-  "private": false,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview"
-  },
-  "devDependencies": {
-    "nuxt": "3.0.0-rc.3"
-  },
-  "license": "MIT"
+	"name": "hali-weather",
+	"version": "0.1.0",
+	"private": false,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@vueuse/core": "^8.5.0",
+		"@vueuse/nuxt": "^8.5.0",
+		"autoprefixer": "^10.4.7",
+		"nuxt": "3.0.0-rc.3",
+		"postcss": "^8.4.14",
+		"tailwindcss": "^3.0.24"
+	},
+	"license": "MIT",
+	"prettier": {
+		"semi": false
+	}
 }
