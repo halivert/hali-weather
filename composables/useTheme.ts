@@ -14,9 +14,16 @@ const getNextIndex = (currentIndex: number, nextTheme?: string) => {
 	return (currentIndex + 1) % themes.length
 }
 
+const selectTheme = (selected) => [
+	selected,
+	themes.findIndex((i) => i === selected),
+]
+
 export const useTheme = () => {
-	const theme = useStorage(THEME_KEY, "auto")
-	const internal = ref(themes.findIndex((i) => i === theme.value) ?? 0)
+	const sel = selectTheme("dark")
+
+	const theme = useStorage(THEME_KEY, sel[0])
+	const internal = ref(themes.findIndex((i) => i === theme.value) ?? sel[1])
 
 	const toggleTheme = async (
 		nextTheme: typeof themes[number] | null = null

@@ -51,7 +51,7 @@ const stats = [
       <background-blur color="bg-yellow-400" side="left-2" />
       <background-blur color="bg-blue-400" side="right-2" />
 
-      <picture class="flex-1 flex items-center justify-center">
+      <picture class="flex-1 flex items-center justify-center z-10">
         <img :src="conditionIcon" :alt="conditionText" class="w-44" />
       </picture>
 

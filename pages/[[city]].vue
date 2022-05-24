@@ -17,7 +17,7 @@ const weather = useWeather(route.params.city || coords)
 			:country="weather.country"
 			:name="weather.name"
 		/>
-		<main class="text-white flex-1 mt-3 p-4 w-full">
+		<main class="dark:text-white flex-1 mt-3 p-4 w-full">
 			<client-only>
 				<location-error v-if="error" :error="error" />
 				<loading-location v-else-if="!locatedAt" />
@@ -27,12 +27,14 @@ const weather = useWeather(route.params.city || coords)
 				</template>
 			</client-only>
 		</main>
-		<footer class="text-center py-1 px-4 text-gray-300 text-xs w-full">
+		<footer
+			class="text-center py-1 px-4 dark:text-gray-300 text-xs w-full text-gray-900"
+		>
 			Hecho con
 			<a
 				href="https://rapidapi.com/weatherapi/api/weatherapi-com/"
 				title="Free Weather API"
-				class="text-gray-500 focus:underline hover:text-gray-400"
+				class="text-gray-600 hover:text-gray-800 dark:text-gray-500 focus:underline dark:hover:text-gray-400"
 				>WeatherAPI.com</a
 			>
 		</footer>
