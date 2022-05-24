@@ -12,7 +12,17 @@ module.exports = {
       display: ["Roboto Slab", "system-ui", "sans-serif"],
       body: ["Radio Canada", "system-ui", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        fg: "#0095ff",
+        bg: {
+          500: "#919199",
+          600: "#232434",
+          700: "#171829",
+          800: "#0b0c1e",
+        },
+      },
+    },
   },
   plugins: [],
-};
+}

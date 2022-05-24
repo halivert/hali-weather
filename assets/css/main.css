@@ -5,3 +5,7 @@
 [v-cloak] {
 	display: none !important;
 }
+
+h1 {
+	@apply text-2xl font-bold font-display;
+}

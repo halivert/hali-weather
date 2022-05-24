@@ -6,7 +6,8 @@
       <Script src="/js/theme.js" />
     </Head>
 
-    <div class="bg-black w-full h-screen overflow-y-scroll">
+    <div class="bg-bg dark:bg-bg-800 w-full h-screen overflow-y-scroll">
+      <nuxt-page />
     </div>
   </div>
 </template>

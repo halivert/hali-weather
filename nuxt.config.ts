@@ -8,7 +8,11 @@ export default defineNuxtConfig({
 		strict: true,
 		typeCheck: true,
 	},
-	runtimeConfig: {},
+	runtimeConfig: {
+		apiUrl: process.env.API_URL,
+		host: process.env.HOST,
+		apiKey: process.env.API_KEY,
+	},
 	build: {
 		postcss: {
 			postcssOptions: {
