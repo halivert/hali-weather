@@ -17,6 +17,7 @@ const weather = useWeather(route.params.city || coords)
 			:country="weather.country"
 			:name="weather.name"
 		/>
+
 		<main class="dark:text-white flex-1 mt-3 p-4 w-full">
 			<client-only>
 				<location-error v-if="error" :error="error" />
@@ -27,6 +28,7 @@ const weather = useWeather(route.params.city || coords)
 				</template>
 			</client-only>
 		</main>
+
 		<footer
 			class="text-center py-1 px-4 dark:text-gray-300 text-xs w-full text-gray-900"
 		>
